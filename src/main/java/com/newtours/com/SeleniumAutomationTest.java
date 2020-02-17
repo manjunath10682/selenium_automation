@@ -35,7 +35,7 @@ public class SeleniumAutomationTest {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Reporter.log("Starting the applicaton", true);
-		driver.get("https://www.google.co.in/");
+		driver.get("http://www.newtours.demoaut.com/");
 		Reporter.log("Registartion process started", true);
 		driver.findElement(By.xpath("//a[text()='REGISTER']")).click();
 		driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("Manju");
@@ -59,11 +59,11 @@ public class SeleniumAutomationTest {
 	
 	@Test
 	public void Login() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium_drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\m1014807\\eclipse-workspace\\Automation\\libs\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Reporter.log("Starting the applicaton", true);
-		driver.get("https://www.google.co.in/");
+		driver.get("http://www.newtours.demoaut.com/");
 		Reporter.log("Login process started", true);
 		driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("manju123");	
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123456");	
@@ -75,11 +75,11 @@ public class SeleniumAutomationTest {
 	
 	@Test
 	public void FlightBooking() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium_drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\m1014807\\eclipse-workspace\\Automation\\libs\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Reporter.log("Starting the applicaton", true);
-		driver.get("https://www.google.co.in/");
+		driver.get("http://www.newtours.demoaut.com/");
 		Reporter.log("Flight booking process started", true);
 		driver.findElement(By.xpath("//a[text()='Flights")).click();	
 		driver.findElement(By.xpath("//input[@name='findFlights']")).click();	
@@ -94,11 +94,11 @@ public class SeleniumAutomationTest {
 	
 	@Test
 	public void CruiseBooking() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium_drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\m1014807\\eclipse-workspace\\Automation\\libs\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Reporter.log("Starting the applicaton", true);
-		driver.get("https://www.google.co.in/");
+		driver.get("http://www.newtours.demoaut.com/");
 		Reporter.log("Crise booking process started", true);
 		driver.findElement(By.xpath("//a[text()='Cruises']")).click();		
 		driver.findElement(By.xpath("//img[@alt='Reservations Open']")).click();		
@@ -116,11 +116,11 @@ public class SeleniumAutomationTest {
 	}
 	@Test
 	public void BrokenLinks() {
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium_drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\m1014807\\eclipse-workspace\\Automation\\libs\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Reporter.log("Starting the applicaton", true);
-		driver.get("https://www.google.co.in/");
+		driver.get("http://www.newtours.demoaut.com/");
 		List<WebElement> links = driver.findElements(By.tagName("a")); 
 		System.out.println("Total links are "+links.size()); 
 		for(int i=0; i<links.size(); i++) {
